@@ -1,0 +1,37 @@
+{
+  "name": "word-games",
+  "version": "1.0.0",
+  "description": "word-games hangman game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "tammy4572",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "file-system": "^2.2.2",
+    "jsonfile": "^3.0.0",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tammy4572/wordgames.git"
+  },
+  "keywords": [
+    "word-games",
+    "hangman",
+    "game"
+  ],
+  "bugs": {
+    "url": "https://github.com/Tammy4572/wordgames/issues"
+  },
+  "homepage": "https://github.com/Tammy4572/wordgames#readme"
+}

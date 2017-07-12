@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <div class="game-div">
+        <p class="display-word">
+            {{#displayWord}}<span>{{.}} </span>{{/displayWord}}
+        </p>
+        <form method="post" action="/game">
+            <input type="text" name="guess" placeholder="Choose a letter">
+
+            <ul>
+            {{#each items}}
+            <li>{{.}}</li>
+            {{/each items}}
+            </ul>
+            <button type="submit" class="submit-btn">Guess</button> {{#error}}{{msg}}{{/error}}
+        </form>
+
+        <!--{{#error}} <p>{{.}} </p> {{/error}}-->
+        <!--<div class="wrapper">
+            <div class="word-revealer dashes">
+                {{#dashes}}<div>{{.}}</div>{{/dashes}}
+            </div>
+        </div>-->
+        <div class="title">Letters Guessed: {{#allGuesses}} <div>{{.}} ,</div>{{/allGuesses}}</div>
+    </div>
+</body>
+</html>
